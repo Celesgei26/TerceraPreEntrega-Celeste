@@ -1,0 +1,25 @@
+@mixin titulos ($color) {
+    margin: 1% auto 3% auto;
+    border-radius: 10px;
+    width: 90%;
+    height: 80px;
+    background-color: $color;
+    h1{
+        position: relative;
+        top: 20px;
+        right: -30px;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        width: 50%;
+        margin: 0%;
+        display: inline;
+    }
+}
+    
+.titulo{
+   @include titulos(violet);
+}
+.tituloartigas{
+   @include titulos(rgb(43, 17, 188));
+}

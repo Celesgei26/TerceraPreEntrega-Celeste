@@ -1,0 +1,113 @@
+footer{
+    background-color: violet;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+        .footcontainer{
+            margin: auto;
+            width: 98%;
+            height: 70%;
+            display: grid;
+            column-gap: 15px;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 1fr 1fr 0.1fr;
+            grid-template-areas: "logoacj footercontent"
+            "logoymca footercontent"
+            "copyrights creator" ;
+        span{
+            color: rgb(10, 10, 10);
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .creator{
+            grid-area: creator;
+            color:rgba(255, 255, 255, 0.952);
+            display: flex;
+            justify-content: space-around;
+            border-top: #ececec 1px dashed;
+            border-left: #ececec 1px dashed;
+            height: 50px;
+        }
+        
+        
+        .acj{
+            margin-bottom: 20px;
+            grid-area: logoacj;
+            display: flex;
+            align-items: center;
+        }
+        .ymca{
+        
+            grid-area: logoymca;
+            display: flex;
+            align-items: center;
+        }
+        .copyrights{
+            grid-area: copyrights;
+            color: rgba(255, 255, 255, 0.952);
+            text-align: center;
+        }
+        .footercontent{
+            display: flex;
+            grid-area: footercontent;
+            color: rgba(255, 255, 255, 0.952);
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: center;
+            justify-content: flex-end;
+            ul{
+                margin: 0px;
+                padding: 0%;
+            }
+            li{
+                img{
+                    margin-left: 10px;
+                    width: 20px;
+                }
+            }
+            div{
+                height: 1fr;
+                width: 20%;
+                a{
+                    color:#fff;
+                    text-decoration:none;
+                }
+                
+            }
+        }
+        @mixin formatologos{
+            display: flex;
+            color:  rgba(255, 255, 255, 0.952);
+            p{
+                margin: 5px;
+            }
+            img{
+                height: 65px;
+                border-right: 2px solid rgba(67, 0, 105, 0.747);
+            }
+        }
+        .acj{
+            @include formatologos;
+            margin-bottom: 20px;
+            grid-area: logoacj;
+            display: flex;
+            align-items: center;
+        }
+        .ymca{
+            @include formatologos;
+            grid-area: logoymca;
+            display: flex;
+            align-items: center;
+        }
+        .acj img{
+            padding: 0 8px 0 8px;
+        }
+        .ymca img{
+            padding-right: 5px;
+        }
+
+        }
+
+    }

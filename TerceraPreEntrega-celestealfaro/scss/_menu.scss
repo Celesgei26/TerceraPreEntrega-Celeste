@@ -1,0 +1,13 @@
+.navimage{
+    height: 65px;
+}
+       
+.navbar a{
+    color: white;
+}
+    
+.nav-link{
+    &hover{
+        color: $rojo;
+    }
+}

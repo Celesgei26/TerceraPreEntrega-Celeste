@@ -1,0 +1,119 @@
+main{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #ececec88;
+    .gridhome{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        
+        .plan{
+
+            grid-area: plan;
+            height: auto;
+        }
+        
+        .horarios{
+            grid-area: horarios;
+            background-color: #192153;
+            height: auto;
+            text-align: center;
+            overflow: auto;
+            display: block;
+            .horarioslista{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                margin-top: auto;
+                position: relative;
+                top: 15px;
+                left: -15px;
+                flex-wrap: wrap;
+                a{
+                    color: #aeedff;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                    span{
+                        color: rgba(255, 255, 255, 0.205);
+                        font-weight: bolder;
+                    }
+                }
+            }
+            img{
+                width: 70px;
+                height: auto;
+                display: inline;
+            }
+            
+        }
+        .unite{
+            grid-area: unite;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #858488;
+            color: rgba(255, 255, 255, 0.534);
+            padding: 30px 20px;
+            font-size: 14px;
+            span{
+                font-weight: 900;
+                font-size: 28px;
+            }
+            a{
+                transition: .5s;
+                text-decoration: none;
+                color: #192153;
+                display: inline-block;
+                font-size: 20px;
+                padding: 5px 15px;
+                margin: 10px;
+                background-color: #aeedff;
+                border-radius: 15px;
+                font-weight: 700;
+
+                &:hover{
+                    text-decoration: none;
+                    color: #192153;
+                    display: inline-block;
+                    font-size: 30px;
+                    padding: 5px 15px;
+                    margin: 0px;
+                    background-color: #caaeff70;
+                    border-radius: 15px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .fundacion{
+            grid-area: fundacion;
+            height: auto;
+        
+        }
+        .aporte{
+            grid-area: aporte;
+            height: auto;
+        }
+        
+        .trabaja{
+            grid-area: trabaja;
+            height: auto;
+        
+        }
+        
+        .iuacj{
+            grid-area: iuacj;
+            height: auto;
+        
+        }
+        
+        
+    }
+}

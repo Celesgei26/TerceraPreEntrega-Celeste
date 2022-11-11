@@ -1,0 +1,92 @@
+@media screen and (max-width:992px) {
+    footer{
+        .footcontainer{
+            .creator{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-left:none;
+    }
+        }
+    }
+    .vision{
+        border-right: none;
+    }
+    .telefonos .row div {
+
+        max-width: 43%;
+    }
+// .nosotros .nosotroscontainer .vision
+    .nosotros{
+        .nosotroscontainer{
+            .vision{
+                border-right: none;
+            }
+        }
+    }
+
+    .escuela{
+        .row{
+            
+            .compa{
+                border-right: none;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .telefonos .row div {
+        max-width:none;
+    }
+    main .gridhome{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "plan plan"
+        "horarios horarios"
+        "unite unite"
+        "iuacj iuacj"
+        "trabaja fundacion"
+        "aporte fundacion";
+    }
+
+    footer{
+        .footcontainer{
+        margin: auto;
+        width: 98%;
+        height: 70%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.5fr 0.5fr 2fr 0.1fr 0.1fr;
+        grid-template-areas: "logoacj"
+        "logoymca"
+        "footercontent"
+        "copyrights "
+        "creator" ;
+        
+        .footercontent{
+            margin-top: 20px;
+            display: block;
+            grid-area: footercontent;
+            color: rgba(255, 255, 255, 0.952);
+            text-align: center;
+            div{
+                height: auto;
+                width: auto;
+            }
+        }
+        .acj{
+            margin-bottom: 0px;
+            
+        }
+    }
+    } 
+    
+}

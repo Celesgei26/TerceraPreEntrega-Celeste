@@ -1,0 +1,547 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #ececec77;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.hijo {
+  border-radius: 10px;
+}
+.hijo img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.artigassect .nosotros h3 {
+  margin-top: 4%;
+}
+.artigassect .videoartigas {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  width: 100%;
+  margin: 2%;
+}
+
+.navimage {
+  height: 65px;
+}
+
+.navbar a {
+  color: white;
+}
+
+.nav-linkhover {
+  color: #ff1e47;
+}
+
+footer {
+  background-color: #ab00c2;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+footer .footcontainer {
+  margin: auto;
+  width: 98%;
+  height: 70%;
+  display: grid;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 0.1fr;
+  grid-template-areas: "logoacj footercontent" "logoymca footercontent" "copyrights creator";
+}
+footer .footcontainer span {
+  color: rgb(10, 10, 10);
+  font-weight: 700;
+  font-size: 20px;
+}
+footer .footcontainer .creator {
+  grid-area: creator;
+  color: rgba(255, 255, 255, 0.952);
+  display: flex;
+  justify-content: space-around;
+  border-top: #ececec 1px dashed;
+  border-left: #ececec 1px dashed;
+  height: 50px;
+}
+footer .footcontainer .acj {
+  margin-bottom: 20px;
+  grid-area: logoacj;
+  display: flex;
+  align-items: center;
+}
+footer .footcontainer .ymca {
+  grid-area: logoymca;
+  display: flex;
+  align-items: center;
+}
+footer .footcontainer .copyrights {
+  grid-area: copyrights;
+  color: rgba(255, 255, 255, 0.952);
+  text-align: center;
+}
+footer .footcontainer .footercontent {
+  display: flex;
+  grid-area: footercontent;
+  color: rgba(255, 255, 255, 0.952);
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .footcontainer .footercontent ul {
+  margin: 0px;
+  padding: 0%;
+}
+footer .footcontainer .footercontent li img {
+  margin-left: 10px;
+  width: 20px;
+}
+footer .footcontainer .footercontent div {
+  height: 1fr;
+  width: 20%;
+}
+footer .footcontainer .footercontent div a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .footcontainer .acj {
+  display: flex;
+  color: rgba(255, 255, 255, 0.952);
+  margin-bottom: 20px;
+  grid-area: logoacj;
+  display: flex;
+  align-items: center;
+}
+footer .footcontainer .acj p {
+  margin: 5px;
+}
+footer .footcontainer .acj img {
+  height: 65px;
+  border-right: 2px solid rgb(0, 49, 105);
+}
+footer .footcontainer .ymca {
+  display: flex;
+  color: rgba(255, 255, 255, 0.952);
+  grid-area: logoymca;
+  display: flex;
+  align-items: center;
+}
+footer .footcontainer .ymca p {
+  margin: 5px;
+}
+footer .footcontainer .ymca img {
+  height: 65px;
+  border-right: 2px solid rgb(96, 0, 105);
+}
+footer .footcontainer .acj img {
+  padding: 0 8px 0 8px;
+}
+footer .footcontainer .ymca img {
+  padding-right: 5px;
+}
+
+.titulo {
+  margin: 1% auto 3% auto;
+  border-radius: 10px;
+  width: 90%;
+  height: 80px;
+  background-color: #5b00c26e;
+}
+.titulo h1 {
+  position: relative;
+  top: 20px;
+  right: -30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  width: 50%;
+  margin: 0%;
+  display: inline;
+}
+
+.tituloartigas {
+  margin: 1% auto 3% auto;
+  border-radius: 10px;
+  width: 90%;
+  height: 80px;
+  background-color: rgb(152, 188, 17);
+}
+.tituloartigas h1 {
+  position: relative;
+  top: 20px;
+  right: -30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  width: 50%;
+  margin: 0%;
+  display: inline;
+}
+
+main {
+  width: 80%;
+  height: auto;
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #ececec;
+}
+main .gridhome {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "plan plan" "horarios horarios" "unite fundacion" "aporte fundacion" "trabaja iuacj"; ;
+}
+main .gridhome .plan {
+  grid-area: plan;
+  height: auto;
+}
+main .gridhome .horarios {
+  grid-area: horarios;
+  background-color: #192153;
+  height: auto;
+  text-align: center;
+  overflow: auto;
+  display: block;
+}
+main .gridhome .horarios .horarioslista {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin-top: auto;
+  position: relative;
+  top: 15px;
+  left: -15px;
+  flex-wrap: wrap;
+}
+main .gridhome .horarios .horarioslista a {
+  color: #aeedff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+main .gridhome .horarios .horarioslista a span {
+  color: white;
+  font-weight: bolder;
+}
+main .gridhome .horarios img {
+  width: 70px;
+  height: auto;
+  display: inline;
+}
+main .gridhome .unite {
+  grid-area: unite;
+  height: auto;
+  background-image: url(./../img/nuestrospa.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #848588de;
+  color: rgba(255, 255, 255, 0.63);
+  padding: 30px 20px;
+  font-size: 14px;
+}
+main .gridhome .unite span {
+  font-weight: 900;
+  font-size: 28px;
+}
+main .gridhome .unite a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: #192153;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin: 10px;
+  background-color: #baaeff77;
+  border-radius: 15px;
+  font-weight: 700;
+}
+main .gridhome .unite a:hover {
+  text-decoration: none;
+  color: #192153;
+  display: inline-block;
+  font-size: 30px;
+  padding: 5px 15px;
+  margin: 0px;
+  background-color: #b3aeff;
+  border-radius: 15px;
+  font-weight: 700;
+}
+main .gridhome .fundacion {
+  grid-area: fundacion;
+  height: auto;
+}
+main .gridhome .aporte {
+  grid-area: aporte;
+  height: auto;
+}
+main .gridhome .trabaja {
+  grid-area: trabaja;
+  height: auto;
+}
+main .gridhome .iuacj {
+  grid-area: iuacj;
+  height: auto;
+}
+
+.nosotros p {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+  margin: 0%;
+}
+.nosotros h2 {
+  margin-top: 30px;
+  color: #192153;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.nosotros .nosotroscontainer {
+  margin-top: 2%;
+  border-top: #192153 solid 1px;
+}
+.nosotros .nosotroscontainer .vision {
+  padding: 20px;
+  display: flex;
+  border-right: #192153 solid 1px;
+  border-bottom: #192153 solid 1px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.nosotros .nosotroscontainer .valores {
+  padding: 20px;
+  display: flex;
+  border-bottom: #192153 solid 1px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.nosotros .nosotroscontainer .mision {
+  padding: 20px;
+  display: flex;
+  border-bottom: #192153 solid 1px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.nosotros .nosotroscontainer .mision h4 {
+  text-align: center;
+}
+.nosotros .nosotroscontainer .directores .row .hijo {
+  background-color: rgba(0, 0, 0, 0.172);
+}
+.nosotros .nosotroscontainer .directores .row div {
+  border: #ececec solid 1px;
+}
+.nosotros .nosotroscontainer .directores .row div p {
+  min-height: 120px;
+  padding: 0px 10px;
+}
+.nosotros .nosotroscontainer .directores .row div h4 {
+  text-align: center;
+  color: #192153;
+  font-size: 30px;
+  margin: 1% 0%;
+}
+.nosotros .nosotroscontainer .directores .row div span {
+  color: #8500c2;
+  font-size: 25px;
+}
+
+.telefonos .row {
+  justify-content: center;
+}
+.telefonos .row div {
+  background-color: rgba(0, 0, 0, 0.172);
+  max-width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 10px;
+  border: dashed 3px #1d00c2;
+}
+.telefonos .row div span {
+  color: #4400c2;
+  font-size: 25px;
+}
+
+.contacto-box .row {
+  justify-content: center;
+}
+.contacto-box .row input[type=text] {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+}
+.contacto-box .row input[type=submit] {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: none;
+  width: 30%;
+  border: #005ac2 1px solid;
+  margin-top: 2%;
+}
+.contacto-box .row input[type=submit]:focus {
+  background-color: #aaaaaa;
+}
+.contacto-box .row input[type=reset] {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: none;
+}
+.contacto-box .row input[type=button] {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: none;
+}
+.contacto-box .row textarea {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: none;
+  height: 40vh;
+}
+.contacto-box .row label {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.escuela .row span {
+  color: #5b00c2;
+}
+.escuela .row div {
+  border-bottom: 1px solid rgb(0, 49, 105);
+  min-height: 300px;
+}
+.escuela .row div h2 {
+  margin-top: 30px;
+  color: #192153;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.escuela .row .compa {
+  border-right: 1px solid rgb(0, 49, 105);
+}
+
+.adhu {
+  margin-bottom: 4%;
+}
+.adhu p span {
+  color: #1d00c2;
+}
+.adhu ul {
+  list-style-type: square;
+  margin: auto;
+  width: 90%;
+}
+
+.unidadportones .nosotros span {
+  color: #005ac2;
+}
+
+.unidadcentro .nosotros span {
+  color: #005ac2;
+}
+.unidadcentro .nosotros ul {
+  position: relative;
+  right: -70px;
+  margin: 20px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  footer .footcontainer .creator {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-left: none;
+  }
+  .vision {
+    border-right: none;
+  }
+  .telefonos .row div {
+    max-width: 43%;
+  }
+  .nosotros .nosotroscontainer .vision {
+    border-right: none;
+  }
+  .escuela .row .compa {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .telefonos .row div {
+    max-width: none;
+  }
+  main .gridhome {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "plan plan" "horarios horarios" "unite unite" ;
+  }
+  footer .footcontainer {
+    margin: auto;
+    width: 98%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr 0.1fr 0.1fr;
+    grid-template-areas: "logoacj" "logoymca" "footercontent" "copyrights " "creator";
+  }
+  footer .footcontainer .footercontent {
+    margin-top: 20px;
+    display: block;
+    grid-area: footercontent;
+    color: rgba(255, 255, 255, 0.952);
+    text-align: center;
+  }
+  footer .footcontainer .footercontent div {
+    height: auto;
+    width: auto;
+  }
+  footer .footcontainer .acj {
+    margin-bottom: 0px;
+  }
+
+  
+}/*# sourceMappingURL=styles.css.map */

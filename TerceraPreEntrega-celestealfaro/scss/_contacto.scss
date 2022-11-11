@@ -1,0 +1,67 @@
+.telefonos{
+    
+
+    .row{
+        justify-content: center;
+        div{
+            background-color: rgba(0, 0, 0, 0.172);
+            max-width: 30%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 10px;
+            border: dashed 3px #c200b2;
+            span{
+                color: #9500c2;
+                font-size: 25px;    
+            }
+        }
+    } 
+}
+
+.contacto-box{
+    .row{
+        justify-content: center;
+        @mixin inputformat () {
+            font-size: 1rem;
+            font-weight: 100;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+            border: none;
+        }
+        @mixin buttonformat () {
+            @include inputformat();
+            width: 30%;
+            border: #5b00c2 1px solid;
+            margin-top: 2%;
+            &:focus{
+                background-color: #aaaaaa
+            }
+        }
+    
+        input[type="text"]{
+            @include inputformat();
+            height: 40px;
+        }
+        input[type="submit"]{
+            @include buttonformat();
+        }
+        input[type="reset"]{
+            @include inputformat();
+        }
+        input[type="button"]{
+            @include inputformat();
+            
+        }
+        textarea{
+            @include inputformat();
+            
+            height: 40vh;
+        }
+        label{
+            @include inputformat();
+            margin-top: 10px;
+            font-weight: 600;
+        }
+    }
+   
+}

@@ -1,0 +1,73 @@
+.nosotros{
+    p{
+        text-align: left;
+        margin: auto;
+        width: 90%;
+        margin: 0%;
+    }
+    h2{
+        margin-top: 30px;
+        color: #3c1953;
+        font-size:30px ;
+        margin-bottom: 10px;
+    }
+    .nosotroscontainer{
+        margin-top: 2%;
+        border-top: #341953 solid 1px;
+        .vision{
+            padding: 40px;
+            display: flex;
+            border-right: #241953 solid 1px;
+            border-bottom: #2f1953 solid 1px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+        
+        .valores {
+            padding: 20px;
+            display: flex;
+            border-bottom: #2d1953 solid 1px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: flex-start;
+        }
+        .mision {
+            padding: 20px;
+            display: flex;
+            border-bottom: #281953 solid 1px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: flex-start;
+            h4{
+                text-align: center;
+            }
+        }
+
+        .directores{
+            .row{
+                .hijo{
+                    background-color: rgba(0, 0, 0, 0.172);
+                }
+                div{
+                    border: #ececec solid 1px;
+                    p{
+                        min-height: 120px;
+                        padding: 0px 10px;
+                    }
+                    h4{
+                        text-align: center;
+                        color: #391953;
+                        font-size:30px ;
+                        margin: 1% 0%;
+                    }
+                    span{
+                        color: #7b00c2;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

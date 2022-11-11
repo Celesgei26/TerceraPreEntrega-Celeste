@@ -1,0 +1,70 @@
+$azul:#6b00c2;
+$rojo: #621eff13;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #ececec;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bold{
+    font-weight: bolder;
+}
+.hijo{
+    border-radius: 10px;
+    img{
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+.artigassect{
+    .nosotros{
+        h3{
+            margin-top: 4%;
+        }
+    }
+    .videoartigas{
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        width: 100%;
+        margin: 2%;
+    }
+}
+.navbar .navbar__list{
+    display: flex;
+}
+
+
+
+
+@import "menu";
+
+@import "footer";
+
+@import "titulos";
+
+@import "main";
+
+@import "nosotros";
+
+@import "contacto";
+
+@import "escuela";
+
+@import "adhu";
+
+@import "unidades";
+
+
+
+
+@import "responsive";
